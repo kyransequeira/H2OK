@@ -1,0 +1,25 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Fountain Status Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <h1>Water Fountain Status Tracker</h1>
+  <div id="map"></div>
+  <div id="fountain-info">
+    <h2>Fountain Status</h2>
+    <p id="status">Loading...</p>
+    <button id="updateStatusButton">Update Status</button>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="map.js"></script>
+  <script src="qr.js"></script>
+</body>
+</html>

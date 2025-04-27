@@ -3,43 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>H2OK - Report Water Quality</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Water Quality Report</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="text-center my-4">H2OK: Report Water Quality</h1>
 
-        <!-- Report Form -->
-        <div id="report-form" class="my-4">
-            <h2 class="text-primary">Report a Water Fountain</h2>
-            <div class="mb-3">
-                <label for="location" class="form-label">Enter Fountain Location:</label>
-                <input type="text" id="location" class="form-control" placeholder="e.g., 123 Main St, City" required>
-            </div>
-            <div class="mb-3">
-                <label for="water-quality" class="form-label">Water Quality:</label>
-                <input type="range" id="water-quality" class="form-range" min="0" max="100" value="50">
-                <p id="water-quality-value">Quality: 50%</p>
-            </div>
-            <div class="mb-3">
-                <label for="status" class="form-label">Status:</label>
-                <select id="status" class="form-select">
-                    <option value="Working">Working</option>
-                    <option value="Broken">Broken</option>
-                </select>
-            </div>
-            <div class="mb-3">
-                <label for="photo" class="form-label">Upload a photo (optional):</label>
-                <input type="file" id="photo" class="form-control">
-            </div>
-            <button onclick="submitReport()" class="btn btn-success w-100">Submit Report</button>
-        </div>
+    <div class="form-container">
+        <h2>Water Quality Report</h2>
+        <form id="guestForm">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
 
-        <p class="text-center mt-4">Made by Kyra Sequeira and Sarah Park</p>
+            <label for="waterQuality">Water Quality:</label>
+            <input type="text" id="waterQuality" name="waterQuality" required>
+
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
     </div>
 
-    <script src="app.js"></script>
+    <script src="guest.js"></script>
 </body>
 </html>

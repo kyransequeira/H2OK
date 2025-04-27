@@ -15,10 +15,12 @@
     <h2>Fountain Status</h2>
     <p id="status">Loading...</p>
     <button id="updateStatusButton">Update Status</button>
+    <button id="findRouteButton">Find Fastest Route to Nearest Fountain</button>
   </div>
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap&libraries=directions"></script>
   <script src="map.js"></script>
   <script src="qr.js"></script>
 </body>

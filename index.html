@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H2OK - Choose Role</title>
-    <!-- Make sure Bootstrap is loaded -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <h1 class="text-center my-4">H2OK</h1>
-        <h2 class="text-center">Select Your Role</h2>
-        <div class="d-flex justify-content-center">
-            <!-- Ensure buttons are showing -->
-            <button class="btn btn-primary mx-2" onclick="goToGuestPage()">Guest</button>
-            <button class="btn btn-secondary mx-2" onclick="goToAdminLogin()">Admin</button>
+<body style="background-color: #f0f8ff; font-family: Arial, sans-serif;">
+    <div class="container" style="text-align: center;">
+        <h1 class="my-4">H2OK</h1>
+        <h2>Select Your Role</h2>
+
+        <!-- Here are the buttons with more distinct styling -->
+        <div style="margin-top: 20px;">
+            <button class="btn btn-primary mx-2" onclick="goToGuestPage()" style="padding: 15px; font-size: 18px;">Guest</button>
+            <button class="btn btn-secondary mx-2" onclick="goToAdminLogin()" style="padding: 15px; font-size: 18px;">Admin</button>
         </div>
     </div>
 
     <script>
-        // Test if the buttons are clicked by logging the click event
         function goToGuestPage() {
             console.log("Guest button clicked!");  // Debugging
             window.location.href = "guest.html";

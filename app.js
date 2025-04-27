@@ -1,6 +1,6 @@
 document.getElementById('water-quality').addEventListener('input', function () {
     const qualityValue = this.value;
-    document.getElementById('water-quality-value').innerText = `Quality: ${qualityValue}%`;
+    document.getElementById('water-quality-value').innerText = Quality: ${qualityValue}%;
 });
 
 function submitReport() {

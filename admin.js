@@ -16,13 +16,13 @@ function adminLogin() {
         reports.forEach((report, index) => {
             const reportDiv = document.createElement("div");
             reportDiv.classList.add("report");
-            reportDiv.innerHTML = `
+            reportDiv.innerHTML = 
                 <h5>Report #${index + 1}</h5>
                 <p><strong>Location:</strong> ${report.location}</p>
                 <p><strong>Quality:</strong> ${report.quality}%</p>
                 <p><strong>Status:</strong> ${report.status}</p>
-                ${report.photo ? `<p><strong>Photo:</strong> ${report.photo}</p>` : ''}
-            `;
+                ${report.photo ? <p><strong>Photo:</strong> ${report.photo}</p> : ''}
+            ;
             reportsList.appendChild(reportDiv);
         });
     } else {
